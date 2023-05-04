@@ -1,12 +1,21 @@
-import { Container } from "react-bootstrap"
-import "./ListContainer.css"
-import UserTable from "../table/UserTable"
-const ListContainer = () => {
-  return (
-    <Container fluid="lg" className="list-container p-3 my-5" >
-        <UserTable/>
-    </Container>
-  )
-}
+import { Container } from "react-bootstrap";
+import "./ListContainer.css";
+import UserTable from "../table/UserTable";
+import UserCard from "../user-card/UserCard";
+import { useSelector } from "react-redux";
 
-export default ListContainer
+const ListContainer = () => {
+  const userCard = useSelector((state) => state.users.userCard);
+  console.log(userCard);
+  return (
+    <Container
+      fluid="lg"
+      className="list-container p-3 my-5 d-flex align-items-center"
+    >
+      <UserTable />
+      {userCard && <UserCard />}
+    </Container>
+  );
+};
+
+export default ListContainer;

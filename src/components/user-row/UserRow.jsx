@@ -2,10 +2,13 @@ import { Image, Form } from "react-bootstrap";
 import "./UserRow.css";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { usersAction } from "../../store/strore";
 
-const UserRow = ({ name, email, status, access, img }) => {
+const UserRow = ({ name, email, status, access, img, id }) => {
   const [isOwner, setIsOwner] = useState(false);
 
+  const dispatch = useDispatch()
   useEffect(() => {
     if (access === "Owner") {
       setIsOwner(true);
@@ -38,11 +41,19 @@ const UserRow = ({ name, email, status, access, img }) => {
     </span>
   }
 
+  function showCard(id){
+    console.log("mouse enter" + id)
+    dispatch(usersAction.showCard({userId:id}))
+  }
+  function hideCard(id){
+    console.log("mouse leave" + id)
+    dispatch(usersAction.hideCard())
+  }
   return (
     <tr className="align-middle">
       {/* This contains namge, image and email */}
       <td>
-        <div className="profile-container d-flex justify-content-start">
+        <div className="profile-container d-flex justify-content-start" onMouseEnter={()=>showCard(id)} onMouseLeave={()=>hideCard(id)}>
           <div className="img-container me-4">
             <Image src={img} roundedCircle />
           </div>
@@ -75,5 +86,6 @@ UserRow.propTypes = {
   status: PropTypes.string,
   access: PropTypes.string,
   img: PropTypes.string,
+  id: PropTypes.string,
 };
 export default UserRow;
