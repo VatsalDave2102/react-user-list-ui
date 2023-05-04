@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 
 const ListContainer = () => {
   const userCard = useSelector((state) => state.users.userCard);
-  console.log(userCard);
-  return (
+   
+  return ( 
     <Container
       fluid="lg"
       className="list-container p-3 my-5 d-flex align-items-center"

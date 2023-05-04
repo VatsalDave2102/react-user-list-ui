@@ -42,11 +42,9 @@ const UserRow = ({ name, email, status, access, img, id }) => {
   }
 
   function showCard(id){
-    console.log("mouse enter" + id)
     dispatch(usersAction.showCard({userId:id}))
   }
-  function hideCard(id){
-    console.log("mouse leave" + id)
+  function hideCard(){
     dispatch(usersAction.hideCard())
   }
   return (
