@@ -8,7 +8,7 @@ const UserCard = () => {
   return (
     <Card
       style={{width:'17rem'}}
-      className={"justify-content-center align-items-center ms-5 transition show"}
+      className={"justify-content-center align-items-center ms-md-5 mt-4 mt-md-0 transition show"}
     >
       {/* Image */}
       <Image src={cardData.img} className="card-img mt-3" roundedCircle />

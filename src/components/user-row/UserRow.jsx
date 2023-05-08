@@ -23,7 +23,7 @@ const UserRow = ({ name, email, status, access, img, id }) => {
 
   if (!isOwner) {
     accessColumnData = (
-      <Form.Select>
+      <Form.Select defaultValue = {access}>
         <option>Manager</option>
         <option>Read</option>
       </Form.Select>

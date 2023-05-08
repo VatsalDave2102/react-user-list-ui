@@ -3,8 +3,8 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 const initialState = {
   usersList: [
     {
-      name: "Jana",
-      email: "Jana@gmail.com",
+      name: "Jana Strassmann",
+      email: "batz.moritmer@yahooo.com",
       status: "Active",
       access: "Owner",
       img: "https://reqres.in/img/faces/1-image.jpg",
@@ -14,8 +14,8 @@ const initialState = {
       progress: "60"
     },
     {
-      name: "Jana",
-      email: "Jana@gmail.comdfsmmmmm",
+      name: "Jube Bowman",
+      email: "ulrich.owen@kristin.biz",
       status: "Active",
       access: "Manager",
       img: "https://reqres.in/img/faces/2-image.jpg",
@@ -25,8 +25,8 @@ const initialState = {
       progress: "50"
     },
     {
-      name: "Jana",
-      email: "vatsaldave200@gmail.com",
+      name: "Kwak Seong-Min",
+      email: "kale_lehner@yahoo.com",
       status: "Active",
       access: "Read",
       img: "https://reqres.in/img/faces/3-image.jpg",
@@ -36,8 +36,8 @@ const initialState = {
       progress: "70"
     },
     {
-      name: "Jana",
-      email: "Jana@gmail.com",
+      name: "Leon Hunt",
+      email: "ulrich.owen@kristin.biz",
       status: "Active",
       access: "Read",
       img: "https://reqres.in/img/faces/4-image.jpg",
@@ -47,8 +47,8 @@ const initialState = {
       progress: "80"
     },
     {
-      name: "Jana",
-      email: "Jana@gmail.com",
+      name: "Nwoye Akachi",
+      email: "ulrich.owen@kristin.biz",
       status: "Active",
       access: "Manager",
       img: "https://reqres.in/img/faces/5-image.jpg",
@@ -58,8 +58,8 @@ const initialState = {
       progress: "90"
     },
     {
-      name: "Jana",
-      email: "Jana@gmail.com",
+      name: "Nombeko Mabandua",
+      email: "kale_lehner@yahoo.com",
       status: "Active",
       access: "Manager",
       img: "https://reqres.in/img/faces/6-image.jpg",
@@ -69,8 +69,8 @@ const initialState = {
       progress: "30"
     },
     {
-      name: "Jana",
-      email: "Jana@gmail.com",
+      name: "Paulina Gayaso",
+      email: "ulrich.owen@kristin.biz",
       status: "Active",
       access: "Manager",
       img: "https://reqres.in/img/faces/5-image.jpg",
@@ -80,8 +80,8 @@ const initialState = {
       progress: "90"
     },
     {
-      name: "Jana",
-      email: "Jana@gmail.com",
+      name: "Siri Jakobsson",
+      email: "ulrich.owen@kristin.biz",
       status: "Active",
       access: "Manager",
       img: "https://reqres.in/img/faces/6-image.jpg",
@@ -91,8 +91,8 @@ const initialState = {
       progress: "30"
     },
     {
-      name: "Jana",
-      email: "Jana@gmail.com",
+      name: "Phawta Tuntayakul",
+      email: "ullrich.owen@kristin.biz",
       status: "Active",
       access: "Manager",
       img: "https://reqres.in/img/faces/6-image.jpg",
@@ -105,6 +105,7 @@ const initialState = {
   ],
   userCard: null
 };
+
 const userSlice = createSlice({
   name: "users",
   initialState,

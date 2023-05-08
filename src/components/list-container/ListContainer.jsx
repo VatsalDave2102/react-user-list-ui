@@ -10,7 +10,7 @@ const ListContainer = () => {
   return ( 
     <Container
       fluid="lg"
-      className="list-container p-3 my-5 d-flex align-items-center"
+      className="list-container p-3 my-5 d-flex flex-md-row flex-column align-items-center"
     >
       <UserTable />
       {userCard && <UserCard />}
